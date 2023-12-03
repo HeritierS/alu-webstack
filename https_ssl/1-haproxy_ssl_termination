@@ -37,7 +37,7 @@ defaults
 frontend www.cprogramming.tech
         mode http
         bind :80
-        bind :443 ssl crt /etc/letsencrypt/live/www.cprogramming.tech/combined.pem
+        bind :443 ssl crt /etc/letsencrypt/live/www.sebageni.tech/combined.pem
         http-request redirect scheme https code 301 unless { ssl_fc }
         default_backend cprogram_servers
 
